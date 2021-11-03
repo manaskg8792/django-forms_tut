@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>List of Employees</h1>
+
+    {% for emp in employees %}
+        <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        Employee name: {{ emp.full_name }}<br>
+        Employee username: {{ emp.username }}<br>
+        Employee address: {{ emp.address }}<br>
+        Employee email: {{ emp.email }}<br>
+        Employee phone_number: {{ emp.phone_number }}<br>
+        Employee is_married: {{ emp.is_married }}<br>
+
+
+    {% endfor %}
+
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p }}
+
+
+<!--        <label for="fullname">Full name</label> <input name="full_name" type="text"><br>-->
+<!--        <label for="username">Username</label> <input name="username" type="text"><br>-->
+<!--        <label for="email">Email</label> <input name="email" type="text"><br>-->
+<!--        <label for="address">Address</label> <input name="address" type="text"><br>-->
+<!--        <label for="phone_number">Phone Number</label> <input name="phone_number" type="text"><br>-->
+<!--        <label for="salary">salary</label> <input name="salary" type="number"><br>-->
+<!--        <label for="is_married">Is Married?</label> <input name="is_married" type="checkbox"><br>-->
+        <button type="submit" class="button is-info">Add Employee</button>
+    </form>
+</body>
+</html>
+</body>
+</html>
+`
+`
